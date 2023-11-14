@@ -2,7 +2,7 @@ import React from 'react';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "./Home.css";
-import img1 from "../images/DJI_0009-4-wpv_429x242_center_center.jpg";
+import img1 from "./img1.jpg";
 import { CiLocationOn } from 'react-icons/ci';
 import { MdOutlineBedroomParent } from "react-icons/md";
 import { FaBath } from "react-icons/fa";
@@ -96,7 +96,7 @@ function Home() {
                     <div className='h-[45px] font-bold text-white bg-slate-600 flex w-[300px] flex items-center p-[20px]'>Land for Sa...</div>
                     <div className='h-[45px] font-bold text-center flex items-center justify-end w-[200px] bg-red-600 text-white p-[10px]'>€240,000</div>
 
-                    Nozimjon, [11/14/2023 3:38 PM]
+                   
                 </div>
                 <div id="txt" className=' border-red-700 h-[40px] flex'>
                     <div className='flex  items-center justify-center   border-red-950 w-[200px]  h-[40px]'><CiLocationOn /><p className=' font-semibold font-monoi'> Larnaka, Oroklini</p></div>
@@ -138,7 +138,7 @@ function Home() {
                     <div className='h-[45px] font-bold text-white bg-slate-600 flex w-[300px] flex items-center p-[20px]'>Land for Sa...</div>
                     <div className='h-[45px] font-bold text-center flex items-center justify-end w-[200px] bg-red-600 text-white p-[10px]'>€240,000</div>
 
-                    Nozimjon, [11/14/2023 3:38 PM]
+                   
                 </div>
                 <div id="txt" className=' border-red-700 h-[40px] flex'>
                     <div className='flex  items-center justify-center   border-red-950 w-[200px]  h-[40px]'><CiLocationOn /><p className=' font-semibold font-monoi'> Larnaka, Oroklini</p></div>
@@ -180,7 +180,7 @@ function Home() {
                     <div className='h-[45px] font-bold text-white bg-slate-600 flex w-[300px] flex items-center p-[20px]'>Land for Sa...</div>
                     <div className='h-[45px] font-bold text-center flex items-center justify-end w-[200px] bg-red-600 text-white p-[10px]'>€240,000</div>
 
-                    Nozimjon, [11/14/2023 3:38 PM]
+                   
                 </div>
                 <div id="txt" className=' border-red-700 h-[40px] flex'>
                     <div className='flex  items-center justify-center   border-red-950 w-[200px]  h-[40px]'><CiLocationOn /><p className=' font-semibold font-monoi'> Larnaka, Oroklini</p></div>

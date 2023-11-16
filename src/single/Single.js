@@ -32,7 +32,7 @@ function Single() {
 
 
 
-            <div className=' hidden  border border-red-600 h-[60px] text-white sm:flex w-[80%] justify-between  list-none flex-wrap  m-auto rounded-l-md  lg:w-[75%] lg:flex-nowrap   lg:h-[60px] ' >
+            <div className=' hidden   h-[60px] text-white sm:flex w-[80%] justify-between  list-none flex-wrap  m-auto rounded-l-md  lg:w-[75%] lg:flex-nowrap   lg:h-[60px] ' >
               <li className=' h-[30px]  sm:h-full sm:flex sm:items-center sm:justify-center '><Link className='text-xl  md:uppercase ' to='swiper'> Photos</Link></li>
               <li className=' h-[30px]  sm:h-full sm:flex sm:items-center sm:justify-center'> <Link className='text-xl  md:uppercase ' to='map'>Map </Link></li>
               <li className=' h-[30px] sm:h-full sm:flex  sm:items-center sm:justify-center'><Link className='text-xl md:uppercase' to='vir'> Virtual</Link></li>
@@ -52,7 +52,7 @@ function Single() {
         </div>
         {/* menu div */}
 
-        <div className='w-full flex justify-center border border-black'>
+        <div className='w-full flex justify-center'>
           <Photos />
         </div>
 

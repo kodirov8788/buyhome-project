@@ -32,7 +32,7 @@ function Swiper_slide() {
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
-                className="relative max-w-[1400px] h-[500px]  border border-black truncate  "
+                className="relative max-w-[1400px] h-[500px]   truncate  "
             >
                 {
                     slides.map((item) => (

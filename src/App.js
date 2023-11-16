@@ -1,8 +1,6 @@
-import Swiper from './single/Start';
 import './App.css';
-
-import Start from "./single/Start"
 import Single from './single/Single';
+
 
 
 function App() {

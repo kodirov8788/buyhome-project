@@ -1,13 +1,13 @@
-import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
+// Import Swiper React components
+import React, { useRef, useState } from 'react';
 
 
-
-function Start() {
+function Swiper_slide() {
     const slides = [
         {
             id: 1,
@@ -26,6 +26,7 @@ function Start() {
     return (
         <>
             <Swiper
+                rewind={true}
                 pagination={{
                     type: 'fraction',
                 }}
@@ -46,4 +47,4 @@ function Start() {
     )
 }
 
-export default Start;
+export default Swiper_slide;

@@ -17,12 +17,10 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<App />} />
-          <Route path='single' element={<Single />}>
-            <Route path='map' element={<Map/>}  />
-            <Route path='vir' element={<Vir/>}  />
-            <Route path='swiper' element={<Swiper_slide/>}  />
-            
-            
+          <Route path='single/:id' element={<Single />}>
+            <Route path='map' element={<Map />} />
+            <Route path='vir' element={<Vir />} />
+            <Route path='swiper' element={<Swiper_slide />} />
           </Route>
         </Routes>
       </BrowserRouter>

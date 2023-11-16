@@ -9,11 +9,8 @@ function App() {
   return (
     <div className="w-full h-full">
       {fake_data.map(addr => (
-        <Link to={`single/${addr.id}/swiper`}> <h1>{addr.address}</h1></Link>
-
-      )
-
-      )}
+        <Link to={`single/${addr.id}/swiper`} state={addr}>  <h1>{addr.address}</h1></Link>
+      ))}
 
       {/* <Single /> */}
 

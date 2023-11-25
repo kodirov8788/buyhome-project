@@ -2,22 +2,31 @@ import img1 from './image/bedrooms.png'
 import img2 from './image/bathrooms.png'
 import img3 from './image/land_area.png'
 import img4 from './image/area-m2.png'
+import { useLocation } from 'react-router-dom'
+import { fake_data } from '../static_data'
 
 function Photos() {
+  // let item = useLocation().state
+  // console.log(item.land)
+
+
+
+
+
   return (
     <div className='w-[85%] m-auto lg:w-[90%] lg:flex lg:justify-between lg:items-center '>
       <div className=' w-full  m-auto flex flex-wrap lg:w-[85%] '>
         <div className='w-1/2 shadow-slate-100  md:w-1/4'>
           <div className='w-full flex'>
             <img className='w-[40px]' src={img1} alt="" />
-            <p className='text-md pl-[5px] py-[10px]'>Bedrooms</p>
+            <p className='text-md pl-[5px] py-[10px]'>Bedrooms </p>
           </div>
-          <p className='text-xl py-[10px]'>5</p>
+          <p className='text-xl py-[10px]'>{fake_data[0].bed}</p>
         </div>
         <div className='w-1/2 shadow-slate-100  md:w-1/4'>
           <div className='w-full flex '>
             <img className='w-[40px]' src={img2} alt="" />
-            <p className='text-md pl-[5px] py-[10px]'>Bathrooms</p>
+            <p className='text-md pl-[5px] py-[10px]'>Bathrooms </p>
           </div>
           <p className='text-xl py-[10px]'>5</p>
         </div>

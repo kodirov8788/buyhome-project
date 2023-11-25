@@ -38,7 +38,7 @@ export const card = [
     land:167,
   },
   {
-    id: 1,    
+    id: 2,    
     img: OneHouse2,
     image: [
       {
@@ -67,7 +67,7 @@ export const card = [
     land:258,
   },
   {
-    id: 1,    
+    id: 3,    
     img: OneHouse3,
     image: [
       {
@@ -97,7 +97,7 @@ export const card = [
   },
   
   {
-    id: 1,    
+    id: 4,    
     img: OneHouse4,
     image: [
       {
@@ -127,7 +127,7 @@ export const card = [
   },
   
   {
-    id: 1,    
+    id: 5,    
     img: OneHouse5,
     image: [
       {

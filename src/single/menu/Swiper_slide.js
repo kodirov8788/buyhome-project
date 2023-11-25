@@ -6,22 +6,23 @@ import { Pagination, Navigation } from 'swiper/modules';
 // Import Swiper React components
 import React, { useEffect, useRef, useState } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
-import { fake_data } from '../../static_data';
 
 
 
 function Swiper_slide() {
-    const [images, setimages] = useState([])
 
-    let Id = useParams().id
-    console.log(images)
+    // let item = useLocation().state
+    // console.log(item.images)
 
-    useEffect(() => {
-        let newArr = fake_data.filter(el => el.id == Id)[0]
-        setimages(newArr)
-    }, [])
+    // let Id = useParams().id
+    // console.log(images)
 
-    console.log(Id)
+    // useEffect(() => {
+    //     let newArr = fake_data.filter(el => el.id == Id)[0]
+    //     setImages(newArr)
+    // }, [])
+
+    // console.log(Id)
     const slides = [
         {
             id: 1,
@@ -49,14 +50,14 @@ function Swiper_slide() {
                 className="relative max-w-[1400px] h-[500px]   truncate  "
             >
                 {
-                    images.images?.map((item) => (
-                        <SwiperSlide className='' key={item.id}> <img className='block w-full h-full object-cover' src={item.img} /></SwiperSlide>
-                    )
+                    slides.map(pho => (
 
-                    )
+                        < SwiperSlide className='' > <img className='block w-full h-full object-cover' src={pho.url} /></SwiperSlide>
+                    ))
+
                 }
 
-            </Swiper>
+            </Swiper >
         </>
     )
 }

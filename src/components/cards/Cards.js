@@ -5,13 +5,14 @@ import { card } from "../../satatic_data";
 import { Link } from "react-router-dom";
 function Cards() {
   return (
-    <div className="w-full h-[135vh] border border-black bg-gray-200">
-      <div className="my-12 text-4xl text-center">
+    <div className="w-full h-auto  bg-gray-200 ">
+      <div className="text-2xl my-12 sm:text-4xl text-center">
         <h1>Featured Properties</h1>
+        <div className="w-20 sm:w-28 h-1 bg-red-700 m-auto mt-5"></div>
       </div>
-      <div className="w-[89%] h-[120vh]  m-auto my-14 grid grid-cols-3">
+      <div className="w-[89%] h-[120vh]  m-auto my-14 lg:flex lg:flex-wrap justify-center">
         {card.map((item) => (
-          <div key={item.id} className="w-[420px] h-auto mb-5 mr-5  bg-white">
+          <div key={item.id} className="w-[400px] h-auto mb-5 mr-5  bg-white">
             <Link className="w-full h-64" to={`single/${item.id}/swiper`}>
               <img className="w-full h-64" src={item.img} alt="" />
             </Link>

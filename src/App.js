@@ -9,9 +9,9 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="w-full h-full">
-      <Navbar />
-      <Firstmain />
-      <Cards />
+      {/* <Navbar />
+      <Firstmain /> */}
+       <Cards />
 
       {/* {fake_data.map(addr => (
         <Link to={`single/${addr.id}/swiper`} state={addr}>  <h1>{addr.address}</h1></Link>
@@ -19,7 +19,7 @@ function App() {
 
       {/* <Single /> */}
 
-      <Move_card />
+      {/* <Move_card /> */}
     </div>
   );
 }

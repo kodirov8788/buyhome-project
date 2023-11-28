@@ -7,8 +7,7 @@ import { useEffect, useState } from 'react'
 import { card } from '../satatic_data'
 
 function Photos() {
-  // let item = useLocation().state
-  // console.log(item.land)
+  
   let item = useLocation().state
   const [land, setLand] = useState([])
   let Id = useParams().id

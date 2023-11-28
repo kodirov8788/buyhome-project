@@ -11,7 +11,6 @@ function App() {
     <div className="w-full h-full">
       <Navbar />
       <Firstmain />
-      <Single />
 
 
 

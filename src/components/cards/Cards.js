@@ -6,14 +6,15 @@ import { Link } from "react-router-dom";
 function Cards() {
   return (
     <div className="w-full h-[135vh] border border-black bg-gray-200">
-      <div className="my-12"></div>
+      <div className="my-12 text-4xl text-center">
+        <h1>Featured Properties</h1>
+      </div>
       <div className="w-[89%] h-[120vh]  m-auto my-14 grid grid-cols-3">
-        
-        
-
         {card.map((item) => (
           <div key={item.id} className="w-[420px] h-auto mb-5 mr-5  bg-white">
-            <img className="w-full h-64" src={item.img} alt="" />
+            <Link className="w-full h-64" to={`single/${item.id}/swiper`}>
+              <img className="w-full h-64" src={item.img} alt="" />
+            </Link>
             <div className="flex w-full h-8 text-white">
               <div className="w-3/5 h-full bg-gray-700 text-base flex items-center">
                 <h2 className="mx-4">{item.title}... </h2>
@@ -38,7 +39,6 @@ function Cards() {
                 </div>
                 <button className="hover:bg-red-600 w-24 h-8 text-white rounded-sm bg-gray-700">
                   <Link to={`single/${item.id}/swiper`}>View</Link>
-                  
                 </button>
               </div>
             </div>

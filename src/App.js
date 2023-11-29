@@ -13,7 +13,7 @@ function App() {
         <Link to={`single/${addr.id}/swiper`} state={addr}>  <h1>{addr.address}</h1></Link>
       ))} */}
 
-      <Single />
+      {/* <Single /> */}
 
 
     </div>

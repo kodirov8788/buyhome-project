@@ -11,7 +11,7 @@ function Photos() {
   let item = useLocation().state
   const [land, setLand] = useState([])
   let Id = useParams().id
-  console.log(land) 
+  console.log(land?.local) 
 
   useEffect(() => {
       let newArr =  card.filter(el => el.id == Id)[0]
@@ -46,14 +46,14 @@ function Photos() {
             <img className='w-[40px]' src={img4} alt="" />
             <p className='text-md pl-[5px] py-[10px]'>Covered</p>
           </div>
-          <p className='text-xl py-[10px]'>{land?.area}m</p>
+          <p className='text-xl py-[10px]'>{land.local} m</p>
         </div>
         <div className='w-1/2 shadow-slate-100  md:w-1/4'>
           <div className='w-full flex '>
             <img className='w-[40px]' src={img3} alt="" />
             <p className='text-md pl-[5px] py-[10px]'>Land</p>
           </div>
-          <p className='text-xl py-[10px]'>{land?.area}m</p>
+          <p className='text-xl py-[10px]'>{land.local}m</p>
         </div>
       </div>
       <div className='hidden w-[15%] lg:block  '>

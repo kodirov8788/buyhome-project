@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="w-full h-full">
+    <div className="w-full ">
       {/* <Navbar />
       <Firstmain /> */}
        <Cards />
@@ -17,9 +17,8 @@ function App() {
         <Link to={`single/${addr.id}/swiper`} state={addr}>  <h1>{addr.address}</h1></Link>
       ))} */}
 
-      {/* <Single /> */}
 
-      {/* <Move_card /> */}
+      <Move_card />
     </div>
   );
 }

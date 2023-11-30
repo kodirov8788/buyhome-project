@@ -4,7 +4,7 @@ import Img1 from "../images/img1.jpg"
 
 function Move_card() {
   return (
-    <div className="w-[100%] h-[100vh]  ">
+    <div className="w-[100%] py-[50px]  ">
         <div className="flex justify-center">
           <div className="w-[115px] h-[70px]">
             <h1 className='text-[30px] font-medium'>Reviews</h1>

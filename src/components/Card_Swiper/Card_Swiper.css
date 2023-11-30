@@ -1,0 +1,33 @@
+
+.Swiper{
+    width: 1200px;
+    height: 261px;
+  }
+  @media (min-width: 640px) {
+   .swiper{
+    width: 427px;
+    height: 408px;
+   }
+  }
+  @media (min-width: 768px) {
+    .swiper{
+     width: 427px;
+     height: 408px;
+     
+    }
+   }
+   @media (min-width: 1024px) {
+    .swiper{
+     width: 1350px;
+     height: 408px;
+     
+    }
+   }
+
+   
+   
+
+
+ 
+ 
+ 

@@ -7,15 +7,15 @@ import { useEffect, useState } from 'react'
 import { card } from '../satatic_data'
 
 function Photos() {
-  
+
   let item = useLocation().state
   const [land, setLand] = useState([])
   let Id = useParams().id
-  console.log(land?.local) 
+  console.log(land.land)
 
   useEffect(() => {
-      let newArr =  card.filter(el => el.id == Id)[0]
-      setLand(newArr)
+    let newArr = card.filter(el => el.id == Id)[0]
+    setLand(newArr)
   }, [])
 
   console.log(Id)
@@ -46,7 +46,7 @@ function Photos() {
             <img className='w-[40px]' src={img4} alt="" />
             <p className='text-md pl-[5px] py-[10px]'>Covered</p>
           </div>
-          <p className='text-xl py-[10px]'>{land.local} m</p>
+          <p className='text-xl py-[10px]'>{land.land} m</p>
         </div>
         <div className='w-1/2 shadow-slate-100  md:w-1/4'>
           <div className='w-full flex '>

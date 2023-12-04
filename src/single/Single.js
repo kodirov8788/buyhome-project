@@ -18,8 +18,8 @@ function Single() {
   return (
     <div className='max-w-[1400px]  w-full m-auto   relative     '>
       <div className='w-full h-[500px]'>
-        {/* <Outlet /> */}
-        < Swiper_slide />
+        <Outlet />
+        {/* < Swiper_slide /> */}
       </div>
       <div className='w-full   '>
         <div className='w-[95%] h-[60px]  lg:h-[60px]    m-auto bg-[#414141] relative flex rounded-md top-[-30px] z-20 '>

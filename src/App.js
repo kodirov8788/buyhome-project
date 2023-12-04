@@ -5,20 +5,18 @@ import Single from "./single/Single";
 import Move_card from "./components/Move_card";
 import Firstmain from "./components/Firstmain";
 import Navbar from "./components/Navbar";
+import Card_swiper from "./components/Card_swiper";
 
 function App() {
   return (
     <div className="w-full ">
       {/* <Navbar />
       <Firstmain /> */}
-       <Cards />
-
-      {/* {fake_data.map(addr => (
-        <Link to={`single/${addr.id}/swiper`} state={addr}>  <h1>{addr.address}</h1></Link>
-      ))} */}
-
+      <Cards />
 
       <Move_card />
+      <Card_swiper/>
+
     </div>
   );
 }

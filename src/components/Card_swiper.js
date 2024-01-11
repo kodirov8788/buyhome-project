@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
 import { card } from "../satatic_data"
 
 // Import Swiper styles
@@ -12,29 +13,39 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+
 
 function Card_swiper() {
+    const getScreensize = () => {
+        return window.screen.width
+    }
     return (
         <>
-            <Swiper
-                slidesPerView={3}
-                spaceBetween={30}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Pagination]}
-                className="max-w-[1400px] h-[500px]   truncate border border-black"
-            >
-                {
+            <div className=" w-full h-[380px] sm:h-[400px] md:h-[500px] mt-10  ">
+                <Swiper
+                    slidesPerView={getScreensize() < 640 ? 1 : 3}
+                    spaceBetween={15}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    autoplay={{
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    }}
+
+                    modules={[Pagination, Autoplay]}
+                    className="h-full w-full"
+                >
+
+                 {
                     card.map(item => (
 
                         < SwiperSlide>
                             <div
                                 key={item.id}
-                                className="w-[400px]     bg-white"
+                                className="w-full pl-5 pr-5     bg-white"
                             >
-                                <Link className="block w-full  h-[180px] p-[8px] sm:h-[240px]" to={`single/${item.id}/swiper`}>
+                                <Link className="block w-full  h-[180px]  sm:h-[240px]" to={`single/${item.id}/swiper`}>
                                     <img className="w-full h-full " src={item.img} alt="" />
                                 </Link>
                                 <div className="flex w-full h-[40px]  text-white">
@@ -75,9 +86,12 @@ function Card_swiper() {
                         </SwiperSlide>
                     ))
 
-                }
+                }    
+                </Swiper>
+                </div>
+               
 
-            </Swiper>
+           
         </>
     );
 }

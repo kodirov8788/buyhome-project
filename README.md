@@ -6,6 +6,7 @@ BuyHome is a forward-thinking platform designed to streamline and transform the 
 ## Tech Stack
 Our website leverages state-of-the-art technologies to ensure a seamless and scalable experience:
 - **Frontend:** ReactJS
+- **Style:** TailwindCss
 - **Backend:** NodeJS
 - **Database:** MongoDB
 - **Additional Tools/Libraries:** React Context for state management
